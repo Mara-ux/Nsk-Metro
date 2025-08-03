@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+@font-face {
+    font-family: Mont-Black;
+    src: url(fonts/MontserratAlternates-Black.ttf);
+}
+@font-face {
+    font-family: Mont-Bold;
+    src: url(fonts/MontserratAlternates-Bold.ttf);
+}
+@font-face {
+    font-family: Mont-Medium;
+    src: url(fonts/MontserratAlternates-Medium.ttf);
+}
+@font-face {
+    font-family: Mont-Regular;
+    src: url(fonts/MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: Mont-SemiBold;
+    src: url(fonts/MontserratAlternates-SemiBold.ttf);
+}
+@font-face {
+    font-family: Mont-SemiBoldItalic;
+    src: url(fonts/MontserratAlternates-SemiBoldItalic.ttf);
+}
+
+body {
+    font-family: Mont-Regular;
+    color: #FFF;
+    background-color: #1D0A0B;
+    min-height: 400vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 0vw 7vw;
+
+}
+
+/* ---- Nav ----  */
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/navBg.png);
+    padding: 0vw 7vw;
+    font-family: Mont-Black;
+    z-index: 100;
+
+}
+
+.mainIcon{
+    margin: 1vw 0vw;
+    height: 3vw;
+}
+
+.navTitle{
+    font-size: calc(var(--index)*1.2);
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 9vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    gap: 1.4vw;
+    font-size: calc(var(--index)*1);
+}
+
+.navMenu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: calc(var(--index)*.7);
+    background-image: linear-gradient(rgba(0, 0, 0, .9) 0 50%, rgba(0, 0, 0, 0));
+    padding-bottom: 3vw;
+    padding-top: 1vw;
+    transition: transform .4s ease-in-out;
+    transform: translateY(-150%);
+    position: fixed;
+    margin-top: calc(var(--index)*3);
+    a{
+        padding: .2vw;
+    }
+}
+.navMenu.active{
+    transform: translateY(0);
+}
+
+/* ---- main ----  */
+
+.main{
+    height: 100vh;
+    background-image: url(img/mainBg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    h1{
+        font-family: Mont-Black;
+        font-size: calc(var(--index)*2);
+        text-transform: uppercase;
+        letter-spacing: .4vw;
+        line-height: 140%;
+    }
+    p{
+        font-family: Mont-Regular;
+        font-size: calc(var(--index)*1);
+        line-height: 120%;
+    }
+
+}
+
+/* ----- choice ------- */
+
+.choice{
+    height: 77vh;
+    background-image: linear-gradient(rgba(29, 10, 11, 0) 0%, rgba(29, 10, 11, 1) 40%), url(img/desBg.png);
+}
+
+.choice .content{
+    padding: 25vh 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.choice .content h1{
+    font-family: Mont-Black;
+    font-size: calc(var(--index)*1.5);
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    line-height: 140%;
+    margin-bottom: calc(var(--index)*1.5);
+    text-align: center;
+}
+
+.choice .content h3{
+    font-family: Mont-Regular;
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    font-size: calc(var(--index)*1);
+    line-height: 140%;
+    margin-bottom: 1.6vw;
+}
+
+.btns{
+    margin-top: 7vh;
+    display: flex;
+    gap: 10vw;
+}
+
+.btn{
+    font-family: Mont-Black;
+    font-size: 1vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1vw;
+    background-color: #E71E23;
+    border: #E71E23 .2rem solid;
+    padding: 1.5vw 3vw;
+    border-radius: 50vw;
+    cursor: pointer;
+    transition: border .2s ease-in-out;
+}
+
+.btn:hover{
+    border: #fff .2rem solid;
+}
+
+/* ----- trevel ------- */
+
+.trevel{
+    display: none;
+    opacity: 0;
+}
+.trevel.active{
+    display: block;
+    opacity: 100;
+}
+
+.marksa{
+    display: none;
+    opacity: 0;
+}
+.marksa.active{
+    display: block;
+    opacity: 100;
+}
+
+.zelts{
+    display: none;
+    opacity: 0;
+}
+.zelts.active{
+    display: block;
+    opacity: 100;
+}
+
+
+.trevel{
+    position: relative;
+    margin-top: 10vw;
+}
+.line{
+    position: absolute;
+    width: 1.7vw;
+    height: 300vh;
+    background-color: #E71E23;
+    border-radius: 50vw;
+    margin-left: 1.7vw;
+}
+
+.station{
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 8vw;
+}
+
+.circle{
+    height: 5.5vw;
+    width: 5.5vw;
+    background-color: #E71E23;
+    border-radius: 50vw;
+}
+
+.station .content{
+    margin-top: .9vw;
+    width: 73vw;
+}
+
+.station .content h2{
+    font-family: Mont-Bold;
+    font-size: calc(var(--index)*1.5);
+    text-transform: uppercase;
+    letter-spacing: .2vw;
+    line-height: 140%;
+}
+
+.infoBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5vw 0vw;
+    max-width: 34vw;
+}
+
+.date{
+    font-family: Mont-SemiBold;
+    font-size: 1.5vw;
+    letter-spacing: .2vw;
+    line-height: 140%;
+}
+
+.text p{
+    font-family: Mont-Regular;
+    font-size: 1.3vw;
+    line-height: 140%;
+    margin-bottom: 1.3vw;
+}
+
+.stationBtn{
+    font-family: Mont-Black;
+    font-size: 1.6vw;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1vw;
+    background-color: #E71E23;
+    border: #E71E23 .3rem solid;
+    padding: 1.5vw 3vw;
+    border-radius: 50vw;
+    cursor: pointer;
+    transition: border .2s ease-in-out;
+    width: 18vw;
+}
+
+.stationBtn:hover{
+    border: #fff .3rem solid;
+}
+
+.map{
+    width: 36vw;
+    cursor: pointer;
+}
