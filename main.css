@@ -421,6 +421,11 @@ h2{
     transform: translateY(-50%) !important;
 
 }
+.gallary-wrapper .swiper-button-prev:after,
+.gallary-wrapper .swiper-button-next:after {
+    font-size: 1.8vw !important; 
+    font-weight: bold !important;
+}
 
 .gallary-wrapper .swiper-button-prev:hover,
 .gallary-wrapper .swiper-button-next:hover {
@@ -436,6 +441,7 @@ h2{
     align-self: flex-start;
     cursor: pointer;
     opacity: .7;
+    width: 3vw;
 }
 .close-btn:hover{
     opacity: 1;
