@@ -320,7 +320,7 @@ h2{
 
 .popup{
     position: fixed;
-    display: none;
+    display: none !important;
     top: 5vh;
     left: 5vw;
     z-index: 10000;
