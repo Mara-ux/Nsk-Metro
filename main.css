@@ -358,18 +358,17 @@ h2{
     width: 40vw;
     position: relative;
 }
+
 .swiper{
     width: 100%;
     height: 100%;
     position: relative;
-
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .swiper-slide img {
@@ -380,6 +379,7 @@ h2{
     transform: translateX(13%) !important;
 }
 
+/* Пагинация */
 .gallary-wrapper .swiper-pagination {
     position: absolute !important;
     bottom: 3vh !important;
@@ -391,39 +391,41 @@ h2{
     gap: 1vw;
 }
 
-.gallary-wrapper .swiper-pagination-bullet {
+.gallary-wrapper .swiper-pagination .swiper-pagination-bullet {
     background: #ffffff !important;
     opacity: 0.6 !important;
-    width: .7vw !important;
-    height: .7vw !important;
-    margin: 0 .3vw !important;
+    width: 0.7vw !important;
+    height: 0.7vw !important;
+    margin: 0 0.3vw !important;
     transition: all 0.3s ease !important;
-
 }
-.gallary-wrapper .swiper-pagination-bullet:hover{
+
+.gallary-wrapper .swiper-pagination .swiper-pagination-bullet:hover {
     background: #E71E23 !important;
 }
 
-.gallary-wrapper .swiper-pagination-bullet-active {
+.gallary-wrapper .swiper-pagination .swiper-pagination-bullet-active {
     background: #E71E23 !important;
     opacity: 1 !important;
+    transform: scale(1.2) !important;
 }
 
 .gallary-wrapper .swiper-button-prev,
 .gallary-wrapper .swiper-button-next {
     color: #fff !important;
     background: rgba(255, 255, 255, 0) !important;
-    border: #FFF solid .1vw;
+    border: #FFF solid 0.1vw !important;
     width: 3vw !important;
     height: 3vw !important;
     border-radius: 50% !important;
     transition: all 0.3s ease !important;
+    margin-top: 0 !important;
     transform: translateY(-50%) !important;
-
 }
+
 .gallary-wrapper .swiper-button-prev:after,
 .gallary-wrapper .swiper-button-next:after {
-    font-size: 1.8vw !important; 
+    font-size: 1.2vw !important;
     font-weight: bold !important;
 }
 
@@ -433,17 +435,34 @@ h2{
     color: #E71E23 !important;
 }
 
+/* Позиционирование стрелок */
+.gallary-wrapper .swiper-button-prev {
+    left: 1vw !important;
+    right: auto !important;
+}
+
+.gallary-wrapper .swiper-button-next {
+    right: 1vw !important;
+    left: auto !important;
+}
+
 /* ------ end of swiper ----- */
 
-.close-btn{
+/* Кнопка закрытия */
+.close-btn {
     position: absolute;
-    right: 0;
+    right: 1vw;
+    top: 1vw;
     align-self: flex-start;
     cursor: pointer;
-    opacity: .7;
-    width: 3vw;
+    opacity: 0.7;
+    width: 2.5vw;
+    height: 2.5vw;
+    z-index: 10001;
+    transition: opacity 0.3s ease;
 }
-.close-btn:hover{
+
+.close-btn:hover {
     opacity: 1;
 }
 
