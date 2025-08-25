@@ -7,6 +7,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/train.svg" />
     <title>Путь вдоль метрополитена</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 
@@ -62,7 +64,7 @@
                                 <p>Конечная станция Ленинской линии Новосибирского метрополитена.</p>
                                 <p>Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup1">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -82,7 +84,7 @@
                                     «Речной вокзал» и «Площадь Маркса».</p>
                                 <p>Архитекторы: В. В. Питерский и В. Г. Козляев</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup2">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -103,7 +105,7 @@
                                 </p>
                                 <p>Архитекторы: Евгений Малыхин</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup3">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -124,7 +126,7 @@
                                 </p>
                                 <p>Архитекторы: Соколов В. П. и Питерский В. В</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup4">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -140,10 +142,12 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Особенность оформления — колонны в виде факелов, символизирующие революционную тематику, облицовка красным мрамором и гранитом. Также упоминается барельеф работы А. Чернобровцева с элементами революции 1917 года в стиле "модерн".</p>
+                                <p>Особенность оформления — колонны в виде факелов, символизирующие революционную
+                                    тематику, облицовка красным мрамором и гранитом. Также упоминается барельеф работы
+                                    А. Чернобровцева с элементами революции 1917 года в стиле "модерн".</p>
                                 <p>Архитекторы: В. В. Питерский, Л. Нечаева и И. А. Барановская</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup5">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -159,10 +163,13 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Два панно в технике флорентийской мозаики созданы ленинградскими художниками. Одно изображает Кремль, другое — факел революции. Автор проекта — московский художник А. Н. Кузнецов. Буквы на стенах выполнены монументально, в стиле, напоминающем оформление мавзолея Ленина.</p>
+                                <p>Два панно в технике флорентийской мозаики созданы ленинградскими художниками. Одно
+                                    изображает Кремль, другое — факел революции. Автор проекта — московский художник А.
+                                    Н. Кузнецов. Буквы на стенах выполнены монументально, в стиле, напоминающем
+                                    оформление мавзолея Ленина.</p>
                                 <p>Архитекторы: А. С. Гецкин, В. Зайцев, В. Г. Хильченко</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup6">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -178,10 +185,12 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Над входами на платформу — два рельефных панно, выполненных скульптором Владимиром Грачёвым с помощью выколотки из меди. Работы имеют общее название — «Победный марш». </p>
+                                <p>Над входами на платформу — два рельефных панно, выполненных скульптором Владимиром
+                                    Грачёвым с помощью выколотки из меди. Работы имеют общее название — «Победный марш».
+                                </p>
                                 <p>Архитекторы: В. В. Питерский, В. Г. Козляев, И. А. Барановская, А. С. Михайлов.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup7">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -197,10 +206,11 @@
                         <div class="textBox">
                             <h4 class="date">2 апреля 1992 года</h4>
                             <div class="text">
-                                <p>Станция названа в честь Ю. А. Гагарина — советского космонавта, первого в мире человека, вышедшего на земную орбиту.</p>
+                                <p>Станция названа в честь Ю. А. Гагарина — советского космонавта, первого в мире
+                                    человека, вышедшего на земную орбиту.</p>
                                 <p>Архитекторы: Ткачёва Т. Б., Козляев В. Г., Мылыхин Е. Е.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup8">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -216,10 +226,12 @@
                         <div class="textBox">
                             <h4 class="date">2 апреля 1992 года</h4>
                             <div class="text">
-                                <p>Сочетает функциональность и эстетику, оставаясь важным звеном транспортной системы Новосибирска. Её история отражает вызовы 1990-х годов, а современное развитие направлено на повышение доступности для пассажиров.</p>
+                                <p>Сочетает функциональность и эстетику, оставаясь важным звеном транспортной системы
+                                    Новосибирска. Её история отражает вызовы 1990-х годов, а современное развитие
+                                    направлено на повышение доступности для пассажиров.</p>
                                 <p>Архитекторы: Моржаков С. В.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup9">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -237,10 +249,12 @@
                         <div class="textBox">
                             <h4 class="date">2 апреля 1992 года</h4>
                             <div class="text">
-                                <p>Сочетает функциональность и эстетику, оставаясь важным звеном транспортной системы Новосибирска. Её история отражает вызовы 1990-х годов, а современное развитие направлено на повышение доступности для пассажиров.</p>
+                                <p>Сочетает функциональность и эстетику, оставаясь важным звеном транспортной системы
+                                    Новосибирска. Её история отражает вызовы 1990-х годов, а современное развитие
+                                    направлено на повышение доступности для пассажиров.</p>
                                 <p>Архитекторы: Моржаков С. В.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup9">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -256,10 +270,11 @@
                         <div class="textBox">
                             <h4 class="date">2 апреля 1992 года</h4>
                             <div class="text">
-                                <p>Станция названа в честь Ю. А. Гагарина — советского космонавта, первого в мире человека, вышедшего на земную орбиту.</p>
+                                <p>Станция названа в честь Ю. А. Гагарина — советского космонавта, первого в мире
+                                    человека, вышедшего на земную орбиту.</p>
                                 <p>Архитекторы: Ткачёва Т. Б., Козляев В. Г., Мылыхин Е. Е.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup8">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -275,10 +290,12 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Над входами на платформу — два рельефных панно, выполненных скульптором Владимиром Грачёвым с помощью выколотки из меди. Работы имеют общее название — «Победный марш». </p>
+                                <p>Над входами на платформу — два рельефных панно, выполненных скульптором Владимиром
+                                    Грачёвым с помощью выколотки из меди. Работы имеют общее название — «Победный марш».
+                                </p>
                                 <p>Архитекторы: В. В. Питерский, В. Г. Козляев, И. А. Барановская, А. С. Михайлов.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup7">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -294,10 +311,13 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Два панно в технике флорентийской мозаики созданы ленинградскими художниками. Одно изображает Кремль, другое — факел революции. Автор проекта — московский художник А. Н. Кузнецов. Буквы на стенах выполнены монументально, в стиле, напоминающем оформление мавзолея Ленина.</p>
+                                <p>Два панно в технике флорентийской мозаики созданы ленинградскими художниками. Одно
+                                    изображает Кремль, другое — факел революции. Автор проекта — московский художник А.
+                                    Н. Кузнецов. Буквы на стенах выполнены монументально, в стиле, напоминающем
+                                    оформление мавзолея Ленина.</p>
                                 <p>Архитекторы: А. С. Гецкин, В. Зайцев, В. Г. Хильченко</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup6">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -313,10 +333,12 @@
                         <div class="textBox">
                             <h4 class="date">7 января 1986 года</h4>
                             <div class="text">
-                                <p>Особенность оформления — колонны в виде факелов, символизирующие революционную тематику, облицовка красным мрамором и гранитом. Также упоминается барельеф работы А. Чернобровцева с элементами революции 1917 года в стиле "модерн".</p>
+                                <p>Особенность оформления — колонны в виде факелов, символизирующие революционную
+                                    тематику, облицовка красным мрамором и гранитом. Также упоминается барельеф работы
+                                    А. Чернобровцева с элементами революции 1917 года в стиле "модерн".</p>
                                 <p>Архитекторы: В. В. Питерский, Л. Нечаева и И. А. Барановская</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup5">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -337,7 +359,7 @@
                                 </p>
                                 <p>Архитекторы: Соколов В. П. и Питерский В. В</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup4">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -358,7 +380,7 @@
                                 </p>
                                 <p>Архитекторы: Евгений Малыхин</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup3">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -378,7 +400,7 @@
                                     «Речной вокзал» и «Площадь Маркса».</p>
                                 <p>Архитекторы: В. В. Питерский и В. Г. Козляев</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup2">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
@@ -397,13 +419,401 @@
                                 <p>Конечная станция Ленинской линии Новосибирского метрополитена.</p>
                                 <p>Архитекторы: Козляев В. Г., Моржаков С. В., Малыхин Е. Е.</p>
                             </div>
-                            <div class="stationBtn">Подробней</div>
+                            <div class="stationBtn" data-popup="popup1">Подробней</div>
                         </div>
                         <img src="img/tempMap.png" alt="" class="map">
                     </div>
                 </div>
             </div>
 
+        </div>
+    </section>
+    <section class=""></section>
+    <section class="about-station">
+        <div class="popup" id="popup1">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/PMarksa1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/PMarksa0.jpg" alt="Маркса0">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/PMarksa2.jpg" alt="Маркса2">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/PMarksa3.jpg" alt="Маркса3">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Площадь Маркса</h2>
+                        <h3>28 июля 1991 года</h3>
+                        <div class="infobox">
+                            <p>Станция расположена в левобережной части города, под одноимённой площадью образованной
+                                пересечением проспекта Карла Маркса с улицами Ватутина, Сибиряков-Гвардейцев и Титова.
+                                Площадь является основным транспортным узлом левобережной части Новосибирска, откуда
+                                отправляются маршруты наземного транспорта по всей левобережной части города и
+                                пригородам, а также в аэропорт "Толмачёво". </p>
+                            <p>Рядом со станцией расположено множество торгово-развлекательных центров. Вестибюли
+                                станции соединены с платформенной частью маршевыми лестницами. Западный вестибюль
+                                станции совмещен с цокольным этажом нового торгового комплекса. Восточный вестибюль
+                                имеет выход в длинный коридор разветвленного подземного перехода, который превращен в
+                                торговый ряд.</p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup2">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/Sud1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/Sud2.jpg" alt="Маркса0">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/Sud2.2.jpg" alt="Маркса2">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/Sud3.jpg" alt="Маркса3">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/Sud4.jpg" alt="Маркса3">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Студенческая</h2>
+                        <h3>7 января 1986 года</h3>
+                        <div class="infobox">
+                            <p>Пятая по счету в первом пусковом комплексе Новосибирского метрополитена и первая в
+                                левобережной части города. Была принята в эксплуатацию 7 января 1986 года (официально -
+                                28 декабря 1985 года). До пуска летом 1991 года станции "Площадь Маркса" была
+                                единственной в левобережной части города и, соответственно, имела самый большой
+                                пассажиропоток.
+                            </p>
+                            <p>Станция возведена открытым способом. На платформе расположены 17 пар колонн с шагом 6
+                                метров, облицованных саянским мрамором светлых тонов, что придает строгий архитектурный
+                                стиль. Стены облицованы также мрамором светлых тонов. Всё это в совокупности по мнению
+                                архитекторов создаёт "объёмный простор - как символ света науки и стремления советской
+                                молодёжи к знаниям, уверенности за будущее своей страны". За станцией расположены
+                                оборотные тупики, которые эксплуатировались до момента открытия станции "Площадь
+                                Маркса". Сейчас они используются для ночного отстоя одного состава.</p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup3">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/sport.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Спортивная</h2>
+                        <h3>Откроется в скором времени</h3>
+                        <div class="infobox">
+                            <p>Расположена между станциями «Речной вокзал» и «Студенческая» на Новосибирском метромосту,
+                                на левом берегу Оби вблизи коммунального моста, Ледового дворца спорта и парка «Арена» в
+                                Кировском районе. Ожидается, что «Спортивная» станет самой напряжённой станцией
+                                Новосибирского метрополитена — её пропускная способность составит 62 тыс. чел./сутки.
+                                Специально к открытию станции будет перезаписан информатор, который последний раз
+                                обновляли в 2011 году — к открытию станции «Золотая Нива».
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup4">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/river1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/river2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/river3.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/river4.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/river5.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Речной вокзал</h2>
+                        <h3>7 января 1986 года</h3>
+                        <div class="infobox">
+                            <p>Станция входила в состав первого пускового комплекса и принята в эксплуатацию 7 января
+                                1986 года (официально - 28 декабря 1985 года). Пол станции отделан гранитом, путевые
+                                стены и колонны светло-серым мрамором, потолок станции отделан алюминиевым профилем.
+                                Круглые по форме цветные витражи выполнены из стекла и стилизованны под знаковые объекты
+                                городов Западной Сибири, расположенных на берегах рек бассейна Оби и Иртыша. Проект
+                                станции выполнен в институте «Новосибметропроект» архитекторами – В. Соколовым и В.
+                                Питерским.</p>
+                            <p>Сразу за станцией начинается эстакада над улицей Большевистская и метромост. Между
+                                платформой и эстакадой расположены мощные тепловые завесы, которые в холодный период
+                                года отсекают воздух, поступающий с метромоста. В дневное время станция дополнительно
+                                освещается естественным освещением через галереи метромоста.</p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup5">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/okt1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/okt2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/okt3.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Октябрьская</h2>
+                        <h3>7 января 1986 года</h3>
+                        <div class="infobox">
+                            <p>Станция "Октябрьская" была открыта 7 января 1986 года (официально - 28 декабря 1985
+                                года). Станция выполнена по типовому проекту колонной трёхпролётной станции мелкого
+                                заложения (т.н. "сороконожка") с 17 парами колонн шагом 6 метров. Станция "Октябрьская"
+                                стояла несколько особняком среди других первого пускового участка, поскольку рядом с ней
+                                располагалось здание Новосибирского обкома КПСС и в перспективе рядом с метро
+                                планировалось создание нового административно-делового центра города.
+                            </p>
+                            <p>Использование в отделке станции красного гранита придает ей особую стилистическую
+                                направленность. В станционном зале колонны ассоциируются со стилизованными факелами,
+                                выражающими напряжение борьбы революционных лет. Очень грамотное архитектурное решение:
+                                чтобы изобразить образ революционной Сибири, не понадобилось никаких барельефов, мозаик,
+                                росписей, а только колонны-факелы с красным фоном путевых стен. Нижняя часть колонн
+                                облицована белым мрамором, верхняя – красным гранитом. Путевые стены станции облицованы
+                                красно-серым светлым мрамором.</p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup6">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/lenin1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/lenin2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/lenin3.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/lenin4.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Площадь Ленина</h2>
+                        <h3>7 января 1986 года</h3>
+                        <div class="infobox">
+                            <p>Станция односводчатая мелкого заложения с островной платформой возведена открытым
+                                способом. Среди всех односводчатых станций в Новосибирске имеет наименьшую длину свода -
+                                около 80 метров, торцевые участки являются однопролетными. К платформе станции ведут
+                                эскалаторные спуски из трех лент, каждая длиной 15 метров. Цветовая композиция станции
+                                строится на сочетании темного и белого мрамора и торжественной целостности открытого на
+                                всю глубину платформы зала. Буквы на путевых стенах станции, согласно проекту, выполнены
+                                монументальными. Торцевые стены над платформой украшены панно из цветного камня,
+                                выложенными по технологии флорентийской мозаики.
+                            </p>
+                            <p>Художественное решение, разработанное ленинградскими художниками должно отражать величие
+                                страны и революционное прошлое города.
+                                Конкурс на архитектурное оформление станции "Площадь Ленина", в центре г. Новосибирска,
+                                выиграл головной институт "Ленметрогипротранс" (Архитектор А.С.Гецкин), а на
+                                художественное - московский художник А.Н.Кузнецов (его фамилия, имя и отчество
+                                запечатаны на одном и мраморных панно, которые были набраны на складчатом рельефе по
+                                торцам платформы).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup7">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red3.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red4.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red5.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/red6.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Красный проспект</h2>
+                        <h3>7 января 1986 года</h3>
+                        <div class="infobox">
+                            <p>Цветовой строй и элементы изобразительного искусства станции ассоциируются с
+                                представлением об истории градостроительного развития и индустриальной мощи
+                                Новосибирска. Станция является типовой колонного типа мелкого заложения, она имеет 17
+                                пар колонн с шагом 6 метров.
+                                Строительство станции: Станционный комплекс, включающий в себя две станции метро
+                                ("Красный проспект" и "Сибирская"), переход между станциями и подуличные переходы. По
+                                изначальному техническому проекту, станция "Красный проспект" располагалась под станцией
+                                "Сибирская", позже было принято более рациональное решение - их поменяли местами.
+                                Соединительная ветка между линиями получилась более удобной для эксплуатации.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup8">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/gagrin1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/gagrin2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/gagrin3.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/gagrin4.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Гагаринская</h2>
+                        <h3>2 апреля 1992 года</h3>
+                        <div class="infobox">
+                            <p>Расположена под главной улицей города - Красным проспектом, недалеко от пересечения с
+                                улицей Кропоткина в Заельцовском районе. Входы в вестибюли станции через подземные
+                                переходы по обе стороны Красного проспекта.
+                                В связи с 50-летием полета Юрия Гагарина в апреле 2011 года Новосибирский метрополитен
+                                реализовал проект по оформлению станции «Гагаринская» в стиле космической тематики.
+                            </p>
+                            <p>На платформе и входах станции сформированы конструкции, стилизованные под иллюминаторы с
+                                портретами Гагарина, при спуске из кассовых залов на стенах лестничных маршей размещена
+                                символика устремленных в небо самолетов, поручни лестничных маршей выполнены как
+                                элементы космических кораблей, а на путевых стенах и колоннах платформы нанесено
+                                изображение звездного неба. Потолок станции выкрашен темно-синей краской, что создаёт
+                                иллюзию ночного неба, со звёздами-светильниками. </p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup9">
+            <div class="wrapper">
+                <img class="close-btn" src="img/close-btn.svg" alt="">
+                <div class="gallary-wrapper ">
+                    <div class="swiper img_wrapper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img class="img" src="img/stations/zael1.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/zael2.jpg" alt="Маркса1">
+                            </div>
+                            <div class="swiper-slide"> <img class="img" src="img/stations/zael3.jpg" alt="Маркса1">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="text-box">
+                        <h2>Заельцовская</h2>
+                        <h3>2 апреля 1992 года</h3>
+                        <div class="infobox">
+                            <p>Станция расположена в Заельцовском районе под крупным транспортным узлом северной части
+                                города - Площадью Калинина, образованной на пересечении главной транспортной артерии
+                                города - Красным проспектом и улицей Дуси Ковальчук. Два входа встроены в жилые дома,
+                                входы северного вестибюля открытого типа. Северный вестибюль и островную платформу
+                                станции соединяет 3-ленточный эскалатор длиной 18 метров.
+                            </p>
+                            <p> Конечная станция Ленинской
+                                линии, за ней расположены четыре пути оборота поездов. Станция находится под крупным
+                                транспортным узлом северной части города - Площадью Калинина, образованной на
+                                пересечении главной транспортной артерии города - Красным проспектом и улицей Дуси
+                                Ковальчук. Третье место по пассажиропотоку принадлежит ей - это 12,7% от всех перевозок (26,2 тыс.
+                                пасс. в сутки).
+                                <p>
+                        </div>
+                    </div>
+                    <div class="player-box"></div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
